@@ -1,0 +1,12 @@
+name: shibyinteractivempgplot
+title: ShibyInteractiveMPGPlot
+username:
+account: machinemonk
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 253128
+bundleId: 1159160
+url: https://machinemonk.shinyapps.io/shibyinteractivempgplot/
+when: 1514916273.16422
+asMultiple: FALSE
+asStatic: FALSE

@@ -1,0 +1,12 @@
+name: shiny_interactive_mpg_plot
+title: Shiny Interactive Mpg Plot
+username:
+account: machinemonk
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 253130
+bundleId: 1159959
+url: https://machinemonk.shinyapps.io/shiny_interactive_mpg_plot/
+when: 1514967653.29615
+asMultiple: FALSE
+asStatic: FALSE

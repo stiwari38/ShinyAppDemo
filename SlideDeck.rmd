@@ -1,0 +1,56 @@
+---
+title: "Shiny interactive plot"
+author: "Shobhit Tiwari"
+date: "January 3, 2018"
+output: 
+  ioslides_presentation:
+      css: styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(ggplot2)
+```
+
+## Introduction
+
+This project provides a demo for simple shiny app for preparing data product class final project. We will be using mtcars dataset.We will plot four variables using x axis, y axis, colour and size as dimensions.
+
+## Usage
+
+User can choose each of the four dimensions using corresponding drop down menu. 
+Based on the selection plot will be rendered. 
+Refer below screenshot from the app
+
+![](image.jpg)
+
+## Plotting code
+
+```{r}
+mpgData <- mtcars
+mpgData$am <- factor(mpgData$am, labels = c("Automatic", "Manual"))
+```
+```{r echo=TRUE}
+  p <- ggplot() + geom_point(data = mpgData, aes(x= wt, y = mpg,
+       color = am, size = cyl)) + scale_size(range = c(4,10)) +
+       labs(caption="Mtcars data plot")
+    p
+```
+
+
+
+## Source code and app
+
+The source code for app can be found at https://github.com/stiwari38/ShinyAppDemo/tree/master
+
+The app is hosted at https://machinemonk.shinyapps.io/shiny_interactive_mpg_plot/.
+
+Give it a try ! 
+
+**References** 
+
+Data: Mtcars dataset 
+
+Source: Henderson and Velleman (1981), Building multiple regression models interactively. Biometrics, 37, 391-411.
+
+Thankyou
